@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Shop</title>
+  <style>
+    /* Basic styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh; /* Ensure full viewport height */
+    }
+
+    /* Navbar styles */
+    .navbar {
+      background-color: #654321; /* Dark brown */
+      color: #fff;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .hamburger {
+      display: none;
+      color: #fff;
+      font-size: 24px;
+    }
+
+    /* Hamburger menu for smaller screens */
+    @media (max-width: 768px) {
+      .navbar-links {
+        display: none;
+      }
+
+      .navbar-links.active {
+        display: block;
+      }
+
+      .navbar-links ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .navbar-links li {
+        margin: 10px 0;
+      }
+
+      .hamburger {
+        display: block;
+        cursor: pointer;
+      }
+    }
+
+    /* Hero section */
+    .hero {
+      background-color: #ffeecc; /* Light orange background */
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .hero h1 {
+      color: #cc6600; /* Dark orange */
+    }
+
+    .hero p {
+      color: #666;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: auto; /* Stick to the bottom */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <a href="#" class="navbar-brand">Your Coffee Shop</a>
+    <div class="hamburger">&#9776;</div>
+    <div class="navbar-links">
+      <ul>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#cards">Menu</a></li>
+        <li><a href="#features">Testimonials</a></li>
+        <!-- Add more navigation links -->
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to Your Coffee Shop</h1>
+    <p>Delicious coffee served with love.</p>
+    <!-- Add Call-to-action button -->
+  </section>
+
+  <!-- Gallery Section -->
+  <!-- ... -->
+
+  <!-- Cards Section -->
+  <!-- ... -->
+
+  <!-- Features/Testimonials Section -->
+  <!-- ... -->
+  <div class="text-center">
+    <img src="buna dimi.jpg" class="rounded" alt="center">
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Contact us: poftăbunălacafeluță@email.com | 123-456-7890</p>
+    <!-- Social media icon links -->
+  </footer>
+
+  <!-- Script for toggling the hamburger menu -->
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navbarLinks = document.querySelector('.navbar-links');
+
+    hamburger.addEventListener('click', () => {
+      navbarLinks.classList.toggle('active');
+    });
+  </script>
+  <i class="bi bi-badge-wc-fill">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-badge-wc-fill" viewBox="0 0 16 16">
+      <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm11.666 1.89c.682 0 1.139.47 1.187 1.107H14v-.11c-.053-1.187-1.024-2-2.342-2-1.604 0-2.518 1.05-2.518 2.751v.747c0 1.7.905 2.73 2.518 2.73 1.314 0 2.285-.792 2.342-1.939v-.114h-1.147c-.048.615-.497 1.05-1.187 1.05-.839 0-1.318-.62-1.318-1.727v-.742c0-1.112.488-1.754 1.318-1.754zm-6.188.926h.044L6.542 11h1.006L9 5.001H7.818l-.82 4.355h-.056L5.97 5.001h-.94l-.972 4.355h-.053l-.827-4.355H2L3.452 11h1.005l1.02-4.184z"/>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gender-female" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M8 1a4 4 0 1 0 0 8 4 4 0 0 0 0-8M3 5a5 5 0 1 1 5.5 4.975V12h2a.5.5 0 0 1 0 1h-2v2.5a.5.5 0 0 1-1 0V13h-2a.5.5 0 0 1 0-1h2V9.975A5 5 0 0 1 3 5"/>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gender-male" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M9.5 2a.5.5 0 0 1 0-1h5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-1 0V2.707L9.871 6.836a5 5 0 1 1-.707-.707L13.293 2zM6 6a4 4 0 1 0 0 8 4 4 0 0 0 0-8"/>
+    </svg>
+  </i>
+  <i class="bi bi-list">
+    <svg xmlns="http://www.w3.org/2000/svg" width="center" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+    </svg>
+  </i>
+  <button type="button" class="btn btn-primary btn-lg" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;color: #cc6600;">Primary</button>
+</body>
+</html>

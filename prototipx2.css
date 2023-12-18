@@ -1,0 +1,25 @@
+/* Add your custom styles */
+
+/* Hero Section */
+.hero {
+    background-image: url('your-hero-image.jpg');
+    /* Add styles for hero section */
+  }
+  
+  /* Menu Section */
+  .menu {text-align: center;
+    /* Add styles for menu section */
+  }
+  
+  /* About Section */
+  .about {text-decoration: overline;
+    /* Add styles for about section */
+  }
+  
+  /* Footer Section */
+  .footer {
+    background-color: #333;
+    color: #fff;
+    /* Add styles for footer section */
+  }
+  
